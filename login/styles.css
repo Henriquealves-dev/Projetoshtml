@@ -1,0 +1,76 @@
+/* Estilo geral para a página */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Contêiner do formulário de login */
+.login-container {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
+}
+
+/* Título do formulário */
+h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+/* Estilo para os grupos de entrada */
+.input-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+/* Rótulos dos campos */
+label {
+  font-size: 14px;
+  color: #333;
+}
+
+/* Campo de entrada */
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+/* Estilo do botão */
+button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  background-color: #3498db;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Alteração de cor do botão ao passar o mouse */
+button:hover {
+  background-color: #2980b9;
+}
+
+/* Estilo da mensagem de erro */
+.error-message {
+  color: red;
+  font-size: 12px;
+  display: none; /* Inicialmente oculta */
+}
