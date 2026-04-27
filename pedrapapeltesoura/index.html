@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pedra, Papel e Tesoura</title>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="game-container">
+    <h1>Pedra, Papel e Tesoura</h1>
+
+    <div class="choices">
+      <div class="choice" id="rock" onclick="playerChoice('rock')">
+        <img src="pedra.jpg" alt="Pedra">
+        <p>Pedra</p>
+      </div>
+
+      <div class="choice" id="paper" onclick="playerChoice('paper')">
+        <img src="papel.png" alt="Papel">
+        <p>Papel</p>
+      </div>
+
+      <div class="choice" id="scissors" onclick="playerChoice('scissors')">
+        <img src="tesoura.jpg" alt="Tesoura">
+        <p>Tesoura</p>
+      </div>
+    </div>
+
+    <div class="game-result">
+      <p id="message" class="tie">Empate!</p>
+    </div>
+
+    <div class="computer-choice">
+      <h3>Escolha do Computador:</h3>
+
+      <div class="computer-images">
+        <div class="choice" id="computerRock" style="display: block;">
+          <img src="pedra.jpg" alt="Pedra do Computador">
+          <p>Pedra</p>
+        </div>
+
+        <div class="choice" id="computerPaper" style="display: none;">
+          <img src="papel.png" alt="Papel do Computador">
+          <p>Papel</p>
+        </div>
+
+        <div class="choice" id="computerScissors" style="display: none;">
+          <img src="tesoura.jpg" alt="Tesoura do Computador">
+          <p>Tesoura</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
